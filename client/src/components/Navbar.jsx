@@ -1,89 +1,3 @@
-// import { Link } from "react-router-dom";
-// import { Heart, Menu } from "lucide-react";
-// // import { Link } from "react-router-dom";
-// import useAuth from "../hooks/useAuth";
-
-// export default function Navbar() {
-//     const { user, logout } = useAuth();
-//   return (
-//     <header className="sticky top-0 z-50 border-b border-[#e8e9df] bg-[#fafaf6]/95 backdrop-blur">
-//       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-//         <Link to="/" className="flex items-center gap-2">
-//           <span className="rounded-xl bg-[#e5f0e5] p-2 text-[#347354]">
-//             <Heart size={22} />
-//           </span>
-//           <span className="text-lg font-bold tracking-tight">
-//             सहारा <span className="text-[#347354]">सेतु</span>
-//           </span>
-//         </Link>
-
-//         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
-//           <Link to="/" className="hover:text-[#347354]">
-//             होम
-//           </Link>
-//           <Link to="/eligibility" className="hover:text-[#347354]">
-//             पात्रता खोजें
-//           </Link>
-//           <Link to="/eligibility-assistant">योजना सहायक</Link>
-//           <a href="/#schemes" className="hover:text-[#347354]">
-//             योजनाएँ
-//           </a>
-//           <a href="#help" className="hover:text-[#347354]">
-//             सहायता
-//           </a>
-//         </div>
-
-//         <Link
-//           to="/eligibility"
-//           className="hidden rounded-full bg-[#347354] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#285b42] md:block"
-//         >
-//           अपनी योजना खोजें
-//         </Link>
-
-//         <Link to="/campaigns">Campaigns</Link>
-
-//         {!user ? (
-//           <div className="flex items-center gap-3">
-//             <Link
-//               to="/login"
-//               className="text-emerald-800 font-semibold px-4 py-2"
-//             >
-//               Login
-//             </Link>
-
-//             <Link
-//               to="/register"
-//               className="bg-emerald-800 text-white rounded-lg px-4 py-2"
-//             >
-//               Register
-//             </Link>
-//           </div>
-//         ) : (
-//           <div className="flex items-center gap-3">
-//             <Link
-//               to="/donor/dashboard"
-//               className="text-emerald-800 font-semibold"
-//             >
-//               Dashboard
-//             </Link>
-
-//             <button
-//               onClick={logout}
-//               className="border border-stone-300 rounded-lg px-4 py-2"
-//             >
-//               Logout
-//             </button>
-//           </div>
-//         )}
-//         <button className="rounded-lg p-2 md:hidden" aria-label="Menu">
-//           <Menu />
-//         </button>
-//       </nav>
-//     </header>
-//   );
-// }
-
-
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Heart, Menu, X, Sparkles, LogOut, LayoutDashboard } from "lucide-react";
 import { useState } from "react";
@@ -114,7 +28,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#dce9df] bg-[#edf5ed]/95 shadow-sm backdrop-blur-lg">
-      <nav className="mx-auto flex max-w-[1400px] items-center justify-between gap-5 px-5 py-3 md:px-8">
+      <nav className="mx-auto flex max-w-350 items-center justify-between gap-5 px-5 py-3 md:px-8">
 
         {/* Brand */}
         <Link to="/" className="flex shrink-0 items-center gap-2.5">
